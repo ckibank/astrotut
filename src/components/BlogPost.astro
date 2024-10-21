@@ -1,0 +1,15 @@
+---
+// const { post } = Astro.props;
+const { url ,title } = Astro.props;
+---
+<!-- <li><a href={post.url}>{post.frontmatter.title}</a></li> -->
+<li><a href={url}>{title}</a></li>
+
+<style>
+  a {
+    padding: 0.5rem 1rem;
+    color: blue;
+    /* background-color: #4c1d95; */
+    text-decoration: underline;
+  }
+</style>  
